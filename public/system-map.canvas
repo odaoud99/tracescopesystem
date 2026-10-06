@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    { "id": "0a12bc34de56f789", "type": "text", "x": 650, "y": 390, "width": 250, "height": 120, "color": "#46d7b0", "text": "# TraceScope\nTelecom trace analysis workbench\nEvidence-led review for core network engineers" },
+    { "id": "1b23cd45ef67a890", "type": "text", "x": 50, "y": 130, "width": 220, "height": 104, "color": "#52b8d6", "text": "# Trace upload\nHuawei PTMF and supported text exports\nUser selects a local capture" },
+    { "id": "2c34de56fa78b901", "type": "text", "x": 350, "y": 130, "width": 220, "height": 104, "color": "#52b8d6", "text": "# Browser parser\nReads record metadata and payloads\nKeeps capture inspection in the UI" },
+    { "id": "3d45ef67ab89c012", "type": "text", "x": 650, "y": 120, "width": 230, "height": 112, "color": "#69d6c2", "text": "# Trace event model\nNormalizes messages, positions, time\nFeeds search and analysis views" },
+    { "id": "4e56fa78bc90d123", "type": "text", "x": 950, "y": 125, "width": 230, "height": 112, "color": "#69d6c2", "text": "# Technology agent\nDetects 2G / 3G / 4G / 5G signatures\nChooses relevant network nodes" },
+    { "id": "5f67ab89cd01e234", "type": "text", "x": 1250, "y": 130, "width": 220, "height": 108, "color": "#69d6c2", "text": "# Telecom knowledge\nMessage type explanations\nEvidence and 3GPP references" },
+    { "id": "6a78bc90de12f345", "type": "text", "x": 60, "y": 405, "width": 225, "height": 108, "color": "#54c6a4", "text": "# Timeline + inspector\nSearch, filter, select records\nReview fields and payload bytes" },
+    { "id": "7b89cd01ef23a456", "type": "text", "x": 75, "y": 685, "width": 225, "height": 108, "color": "#54c6a4", "text": "# Call flow\nMessage direction and participants\nShows evidence-backed endpoints" },
+    { "id": "8c90de12fa34b567", "type": "text", "x": 370, "y": 690, "width": 235, "height": 110, "color": "#54c6a4", "text": "# Network route\nTechnology-aware infrastructure path\nReference links are marked as inferred" },
+    { "id": "9d01ef23ab45c678", "type": "text", "x": 650, "y": 690, "width": 230, "height": 110, "color": "#b49af7", "text": "# AI assistant\nLocal trace lookups and GLM answers\nAnswers cite trace record numbers" },
+    { "id": "ae12fa34bc56d789", "type": "text", "x": 950, "y": 690, "width": 230, "height": 110, "color": "#b49af7", "text": "# Research desk\nExplicit Huawei web searches via Tavily\nSources and documents stay reviewable" },
+    { "id": "bf23ab45cd67e890", "type": "text", "x": 1250, "y": 690, "width": 220, "height": 108, "color": "#e9b866", "text": "# Audit log\nActivities and decision explanations\nExcludes prompts and trace contents" },
+    { "id": "c034bc56de78f901", "type": "text", "x": 1280, "y": 420, "width": 220, "height": 108, "color": "#b49af7", "text": "# Agent memory\nEngineer-curated guidance\nSaved locally; treated as unverified" },
+    { "id": "d145cd67ef890a12", "type": "text", "x": 950, "y": 415, "width": 230, "height": 108, "color": "#e9b866", "text": "# Local API server\nServes the UI and proxies APIs\nHealth monitor and bounded recovery" },
+    { "id": "e256de78fa901b23", "type": "text", "x": 370, "y": 415, "width": 225, "height": 108, "color": "#e9b866", "text": "# Docker deployment\nLoopback-bound Compose service\nPersistent volume for agent memory" },
+    { "id": "f367ef890a12c345", "type": "text", "x": 650, "y": 875, "width": 250, "height": 100, "color": "#52b8d6", "text": "# Obsidian Canvas\nThis system map is a .canvas file\nDownload and open it in Obsidian" }
+  ],
+  "edges": [
+    { "id": "0123abcd4567ef89", "fromNode": "1b23cd45ef67a890", "fromSide": "right", "toNode": "2c34de56fa78b901", "toSide": "left", "toEnd": "arrow", "label": "capture" },
+    { "id": "1234bcde5678f901", "fromNode": "2c34de56fa78b901", "fromSide": "right", "toNode": "3d45ef67ab89c012", "toSide": "left", "toEnd": "arrow", "label": "parse" },
+    { "id": "2345cdef6789a012", "fromNode": "3d45ef67ab89c012", "fromSide": "right", "toNode": "4e56fa78bc90d123", "toSide": "left", "toEnd": "arrow", "label": "classify" },
+    { "id": "3456def7890ab123", "fromNode": "3d45ef67ab89c012", "fromSide": "right", "toNode": "5f67ab89cd01e234", "toSide": "left", "toEnd": "arrow", "label": "annotate" },
+    { "id": "4567ef890ab1c234", "fromNode": "3d45ef67ab89c012", "fromSide": "left", "toNode": "6a78bc90de12f345", "toSide": "right", "toEnd": "arrow", "label": "render" },
+    { "id": "5678f901ab2c3456", "fromNode": "3d45ef67ab89c012", "fromSide": "left", "toNode": "7b89cd01ef23a456", "toSide": "right", "toEnd": "arrow", "label": "sequence" },
+    { "id": "6789a012bc3d4567", "fromNode": "4e56fa78bc90d123", "fromSide": "bottom", "toNode": "8c90de12fa34b567", "toSide": "top", "toEnd": "arrow", "label": "select route" },
+    { "id": "7890ab12cd3e4567", "fromNode": "3d45ef67ab89c012", "fromSide": "bottom", "toNode": "9d01ef23ab45c678", "toSide": "top", "toEnd": "arrow", "label": "trace context" },
+    { "id": "8901bc23de4f5678", "fromNode": "9d01ef23ab45c678", "fromSide": "right", "toNode": "d145cd67ef890a12", "toSide": "left", "toEnd": "arrow", "label": "GLM API" },
+    { "id": "9012cd34ef5a6789", "fromNode": "ae12fa34bc56d789", "fromSide": "left", "toNode": "d145cd67ef890a12", "toSide": "right", "toEnd": "arrow", "label": "Tavily API" },
+    { "id": "a123de45f067b89c", "fromNode": "c034bc56de78f901", "fromSide": "left", "toNode": "9d01ef23ab45c678", "toSide": "right", "toEnd": "arrow", "label": "unverified guidance" },
+    { "id": "b234ef56a178c90d", "fromNode": "3d45ef67ab89c012", "fromSide": "bottom", "toNode": "bf23ab45cd67e890", "toSide": "top", "toEnd": "arrow", "label": "record actions" },
+    { "id": "c345f067b289d01e", "fromNode": "d145cd67ef890a12", "fromSide": "bottom", "toNode": "bf23ab45cd67e890", "toSide": "top", "toEnd": "arrow", "label": "activity events" },
+    { "id": "d4560178c39ae12f", "fromNode": "e256de78fa901b23", "fromSide": "right", "toNode": "d145cd67ef890a12", "toSide": "left", "toEnd": "arrow", "label": "runs" },
+    { "id": "e5671289d4abf230", "fromNode": "3d45ef67ab89c012", "fromSide": "bottom", "toNode": "f367ef890a12c345", "toSide": "top", "toEnd": "arrow", "label": "export map" },
+    { "id": "f678239ae5bc014d", "fromNode": "0a12bc34de56f789", "fromSide": "left", "toNode": "3d45ef67ab89c012", "toSide": "right", "toEnd": "arrow", "label": "contains analysis" },
+    { "id": "067934abf6cd125e", "fromNode": "0a12bc34de56f789", "fromSide": "left", "toNode": "2c34de56fa78b901", "toSide": "right", "toEnd": "arrow", "label": "ingests" },
+    { "id": "178a45bc06de239f", "fromNode": "0a12bc34de56f789", "fromSide": "right", "toNode": "d145cd67ef890a12", "toSide": "left", "toEnd": "arrow", "label": "serves" },
+    { "id": "289b56cd17ef340a", "fromNode": "0a12bc34de56f789", "fromSide": "bottom", "toNode": "9d01ef23ab45c678", "toSide": "top", "toEnd": "arrow", "label": "assists" },
+    { "id": "39ac67de28f0451b", "fromNode": "0a12bc34de56f789", "fromSide": "bottom", "toNode": "bf23ab45cd67e890", "toSide": "top", "toEnd": "arrow", "label": "records decisions" }
+  ]
+}

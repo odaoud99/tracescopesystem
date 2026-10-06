@@ -1,0 +1,13 @@
+{
+  "schema": "tracescope-message-catalog/v1",
+  "product": "Authorized catalog name",
+  "version": "Catalog version",
+  "source": "Approved source or license reference",
+  "traceTypes": [
+    {
+      "name": "Exact trace type name from the export",
+      "release": "Exact trace release, when known",
+      "messages": []
+    }
+  ]
+}

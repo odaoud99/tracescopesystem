@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+node_modules/
+release/
+dist/
+.agent-memory.json
+.codex/
+.agents/
+*.ptmf
+*.trace
+*.cap
+*.pcap
+*.bin
+*.dat
+*.log
